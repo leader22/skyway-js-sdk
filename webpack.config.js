@@ -8,6 +8,7 @@ const config = {
   output: {
     libraryTarget: 'umd',
     libraryExport: 'default',
+    globalObject: '(typeof self !== "undefined" ? self : this)',
     library: 'Peer',
     path: `${__dirname}/dist`,
     filename: '[name].js',
